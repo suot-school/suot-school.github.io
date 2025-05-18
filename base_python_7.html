@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Python Базовый: Урок 1</title>
+    <title>Python Базовый: Урок 7</title>
     <style>
         body {
             background-color: #f0f8ff; /* оставляем фон */
@@ -59,25 +59,33 @@
 </head>
 <body>
 
-    <h1>Python Базовый: Урок 1</h1>
+    <h1>Python Базовый: Урок 7</h1>
 
     <!-- Лекция -->
     <div class="section">
         <h2>Лекция</h2>
-        <iframe class="pdf-viewer" src="pdf/Python_введение_1.pdf"></iframe>
+        <iframe class="pdf-viewer" src="pdf/Python_введение_7.pdf"></iframe>
         <!-- Замените "lecture.pdf" на путь к вашему PDF-файлу -->
     </div>
 
-    <!-- Задание -->
+
+
+     <!-- Задание -->
     <div class="section">
         <h2>Задание 1</h2>
-        <h3>Напиши программу, которая выводит "Привет!"</h3>
+        <h3>Напиши программу выбора 3 подарков в магазине "Бозон".<br>
+            Программа должна спрашивать 3 раза "Какой подарок ты выберешь?", и ты можешь ввести с клавиатуры название подарка.<br>
+            Затем программа должна вывести все твои подарки в виде списка.<br><br>
+            Пример:<br>Какой первый подарок ты выберешь?   Самокат<br>
+            Какой второй подарок ты выберешь?   Блокнот<br>
+            Какой последний подарок ты выберешь?   Шоколадка<br><br>
+            Твои подарки: ["Самокат", "Блокнот", "Шоколадка"]</h3>
     </div>
 
     <!-- Редактор кода (Trinket) -->
     <div class="section">
         <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket11" allowfullscreen></iframe>
+        <iframe class="trinket-embed" data-trinket-id="trinket71" allowfullscreen></iframe>
         <!-- Замените ссылку на ваш Trinket-виджет -->
     </div>
 
@@ -86,30 +94,15 @@
         <button class="collapsible">Ответ и решение ▼</button>
         <div class="content">
             <p>Пример решения:</p>
-            <pre><code>print("Привет!")</code></pre>
-        </div>
-    </div>
+            <pre><code>a = input("Какой первый подарок ты выберешь? ")</code></pre>
+            <pre><code>b = input("Какой второй подарок ты выберешь? ")</code></pre>
+            <pre><code>c = input("Какой последний подарок ты выберешь? ")</code></pre>
+            <pre><code>spisok =  []</code></pre>
+            <pre><code>spisok.append(a)</code></pre>
+            <pre><code>spisok.append(b)</code></pre>
+            <pre><code>spisok.append(c)</code></pre>
+            <pre><code>print("Твои подарки:", spisok)</code></pre>
 
-    <!-- Задание -->
-    <div class="section">
-        <h2>Задание 2</h2>
-        <h3>Создай переменную name, которая принимает значение с клавиатуры (подсказка: используй команду input("Введите имя: ")) <br> Напиши программу, которая выводит "Привет, [имя пользователя]!" <br> <br> Пример: <br> Введите имя: Коля <br> Привет, Коля!</h3>
-    </div>
-
-    <!-- Редактор кода (Trinket) -->
-    <div class="section">
-        <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket12" allowfullscreen></iframe>
-        <!-- Замените ссылку на ваш Trinket-виджет -->
-    </div>
-
-    <!-- Ответ и решение -->
-    <div class="section">
-        <button class="collapsible">Ответ и решение ▼</button>
-        <div class="content">
-            <p>Пример решения:</p>
-            <pre><code>name = input("Введите имя: ")</code></pre>
-            <pre><code>print("Привет," + name + "!")</code></pre>
         </div>
     </div>
 

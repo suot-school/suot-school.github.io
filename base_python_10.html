@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Базовый: Урок 10</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* оставляем фон */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue; /* сохраняем цвет заголовка */
+        }
+
+        h2 {
+            color: black;
+            margin-top: 70px;
+        }
+
+        h3 {
+            color: black;
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 45px;
+        }
+
+        iframe.pdf-viewer {
+            width: 100%;
+            height: 680px;
+            border: 1px solid #ccc;
+        }
+        iframe.trinket-embed {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ccc;
+        }
+        .collapsible {
+            background-color: #e0e0e0;
+            cursor: pointer;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Python Базовый: Урок 10</h1>
+
+    <!-- Лекция -->
+    <div class="section">
+        <h2>Лекция</h2>
+        <iframe class="pdf-viewer" src="pdf/Python_введение_10.pdf"></iframe>
+        <!-- Замените "lecture.pdf" на путь к вашему PDF-файлу -->
+    </div>
+
+
+
+     <!-- Задание -->
+    <div class="section">
+        <h2>Задание 1</h2>
+        <h3>Попробуй написать свою игру "Камень-ножницы-бумага" по примеру из урока.<br>
+        Сыграй с компьютером в игру!</h3>
+    </div>
+
+    <!-- Редактор кода (Trinket) -->
+    <div class="section">
+        <h2>Trinket</h2>
+        <iframe class="trinket-embed" data-trinket-id="trinket101" allowfullscreen></iframe>
+        <!-- Замените ссылку на ваш Trinket-виджет -->
+    </div>
+
+<!--    &lt;!&ndash; Ответ и решение &ndash;&gt;-->
+<!--    <div class="section">-->
+<!--        <button class="collapsible">Ответ и решение ▼</button>-->
+<!--        <div class="content">-->
+<!--            <p>Пример решения:</p>-->
+<!--            <pre><code>from random import choices</code></pre>-->
+<!--            <pre><code>uchastniki = ['Маша', 'Лена', 'Федя', 'Женя', 'Даша']</code></pre>-->
+<!--            <pre><code>result = choices(uchastniki)</code></pre>-->
+<!--            <pre><code>print(result)</code></pre>-->
+
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <script src="lesson.js"></script>
+
+
+</body>
+</html>

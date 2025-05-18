@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Python Базовый: Урок 1</title>
+    <title>Python Базовый: Урок 6</title>
     <style>
         body {
             background-color: #f0f8ff; /* оставляем фон */
@@ -59,25 +59,29 @@
 </head>
 <body>
 
-    <h1>Python Базовый: Урок 1</h1>
+    <h1>Python Базовый: Урок 6</h1>
 
     <!-- Лекция -->
     <div class="section">
         <h2>Лекция</h2>
-        <iframe class="pdf-viewer" src="pdf/Python_введение_1.pdf"></iframe>
+        <iframe class="pdf-viewer" src="pdf/Python_введение_6.pdf"></iframe>
         <!-- Замените "lecture.pdf" на путь к вашему PDF-файлу -->
     </div>
 
-    <!-- Задание -->
+
+
+     <!-- Задание -->
     <div class="section">
         <h2>Задание 1</h2>
-        <h3>Напиши программу, которая выводит "Привет!"</h3>
+        <h3>Напиши функцию summa(), которая на найдет сумму двух чисел. Значения чисел нужно ввести с клавиатуры.<br>
+            Не забудь вызвать функцию после того, как напишешь ее.<br><br>
+            Пример:<br>Введите первое слагаемое: 5<br>Введите второе слагаемое: 7<br>12</h3>
     </div>
 
     <!-- Редактор кода (Trinket) -->
     <div class="section">
         <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket11" allowfullscreen></iframe>
+        <iframe class="trinket-embed" data-trinket-id="trinket61" allowfullscreen></iframe>
         <!-- Замените ссылку на ваш Trinket-виджет -->
     </div>
 
@@ -86,20 +90,30 @@
         <button class="collapsible">Ответ и решение ▼</button>
         <div class="content">
             <p>Пример решения:</p>
-            <pre><code>print("Привет!")</code></pre>
+            <pre><code>def summa():</code></pre>
+            <pre><code>      a = int(input("Введите первое слагаемое: "))</code></pre>
+            <pre><code>      b = int(input("Введите второе слагаемое: "))</code></pre>
+            <pre><code>      c = a + b</code></pre>
+            <pre><code>      print(c)</code></pre>
+            <pre><code>summa()</code></pre>
+
+
         </div>
     </div>
 
-    <!-- Задание -->
+
+      <!-- Задание -->
     <div class="section">
         <h2>Задание 2</h2>
-        <h3>Создай переменную name, которая принимает значение с клавиатуры (подсказка: используй команду input("Введите имя: ")) <br> Напиши программу, которая выводит "Привет, [имя пользователя]!" <br> <br> Пример: <br> Введите имя: Коля <br> Привет, Коля!</h3>
+        <h3>Напиши функцию plus_10(), которая прибавляет число 10 к твоему числу, которое ты введешь с клавиатуры.<br>
+            Не забудь вызвать функцию после того, как напишешь ее.<br><br>
+            Пример:<br>Введите свое число: 5<br>15</h3>
     </div>
 
     <!-- Редактор кода (Trinket) -->
     <div class="section">
         <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket12" allowfullscreen></iframe>
+        <iframe class="trinket-embed" data-trinket-id="trinket62" allowfullscreen></iframe>
         <!-- Замените ссылку на ваш Trinket-виджет -->
     </div>
 
@@ -108,8 +122,12 @@
         <button class="collapsible">Ответ и решение ▼</button>
         <div class="content">
             <p>Пример решения:</p>
-            <pre><code>name = input("Введите имя: ")</code></pre>
-            <pre><code>print("Привет," + name + "!")</code></pre>
+            <pre><code>def plus_10():</code></pre>
+            <pre><code>      a = int(input("Введите свое число: "))</code></pre>
+            <pre><code>      c = a + 10</code></pre>
+            <pre><code>      print(c)</code></pre>
+            <pre><code>plus_10()</code></pre>
+
         </div>
     </div>
 

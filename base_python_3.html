@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Python Базовый: Урок 1</title>
+    <title>Python Базовый: Урок 3</title>
     <style>
         body {
             background-color: #f0f8ff; /* оставляем фон */
@@ -59,25 +59,31 @@
 </head>
 <body>
 
-    <h1>Python Базовый: Урок 1</h1>
+    <h1>Python Базовый: Урок 3</h1>
 
     <!-- Лекция -->
     <div class="section">
         <h2>Лекция</h2>
-        <iframe class="pdf-viewer" src="pdf/Python_введение_1.pdf"></iframe>
+        <iframe class="pdf-viewer" src="pdf/Python_введение_3.pdf"></iframe>
         <!-- Замените "lecture.pdf" на путь к вашему PDF-файлу -->
     </div>
 
-    <!-- Задание -->
+
+
+     <!-- Задание -->
     <div class="section">
         <h2>Задание 1</h2>
-        <h3>Напиши программу, которая выводит "Привет!"</h3>
+        <h3>Напиши программу, которая поможет выбрать книгу. <br>
+            Если ты хочешь почитать фантастику, программа должна предложить книгу "Марсианин".<br>
+            Если ты хочешь почитать ужастик, программа должна предложить книгу "Дом с привидениями".<br> <br>
+            Пример: <br> Какой жанр ты выберешь: фантастика или ужастик?   -   фантастика <br>
+            "Дом с привидениями" </h3>
     </div>
 
     <!-- Редактор кода (Trinket) -->
     <div class="section">
         <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket11" allowfullscreen></iframe>
+        <iframe class="trinket-embed" data-trinket-id="trinket31" allowfullscreen></iframe>
         <!-- Замените ссылку на ваш Trinket-виджет -->
     </div>
 
@@ -86,33 +92,14 @@
         <button class="collapsible">Ответ и решение ▼</button>
         <div class="content">
             <p>Пример решения:</p>
-            <pre><code>print("Привет!")</code></pre>
+            <pre><code>book = input("Какой жанр Вы выберете: фантастика или ужастик?")</code></pre>
+            <pre><code>if book == "фантастика":</code></pre>
+            <pre><code>      print("Марсианин")</code></pre>
+            <pre><code>else:</code></pre>
+            <pre><code>      print("Дом с привидениями")</code></pre>
+
         </div>
     </div>
-
-    <!-- Задание -->
-    <div class="section">
-        <h2>Задание 2</h2>
-        <h3>Создай переменную name, которая принимает значение с клавиатуры (подсказка: используй команду input("Введите имя: ")) <br> Напиши программу, которая выводит "Привет, [имя пользователя]!" <br> <br> Пример: <br> Введите имя: Коля <br> Привет, Коля!</h3>
-    </div>
-
-    <!-- Редактор кода (Trinket) -->
-    <div class="section">
-        <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket12" allowfullscreen></iframe>
-        <!-- Замените ссылку на ваш Trinket-виджет -->
-    </div>
-
-    <!-- Ответ и решение -->
-    <div class="section">
-        <button class="collapsible">Ответ и решение ▼</button>
-        <div class="content">
-            <p>Пример решения:</p>
-            <pre><code>name = input("Введите имя: ")</code></pre>
-            <pre><code>print("Привет," + name + "!")</code></pre>
-        </div>
-    </div>
-
 
     <script src="lesson.js"></script>
 

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Python Базовый: Урок 1</title>
+    <title>Python Базовый: Урок 4</title>
     <style>
         body {
             background-color: #f0f8ff; /* оставляем фон */
@@ -59,25 +59,32 @@
 </head>
 <body>
 
-    <h1>Python Базовый: Урок 1</h1>
+    <h1>Python Базовый: Урок 4</h1>
 
     <!-- Лекция -->
     <div class="section">
         <h2>Лекция</h2>
-        <iframe class="pdf-viewer" src="pdf/Python_введение_1.pdf"></iframe>
+        <iframe class="pdf-viewer" src="pdf/Python_введение_4.pdf"></iframe>
         <!-- Замените "lecture.pdf" на путь к вашему PDF-файлу -->
     </div>
 
-    <!-- Задание -->
+
+
+     <!-- Задание -->
     <div class="section">
         <h2>Задание 1</h2>
-        <h3>Напиши программу, которая выводит "Привет!"</h3>
+        <h3>Напиши программу, которая поможет получить скидку по промокоду. <br>
+            Если человек введет промокод "Весна", он получит скидку 30%. И программа выведет на экран фразу "У Вас скидка 30%!"<br>
+            Если человек ошибся, программа должна вывести на экран фразу "Промокод неверный, попробуйте снова".<br>
+            Количество попыток неограниченно. <br> <br>
+            Пример: <br> Введите промокод:   Весна <br>
+            "У Вас скидка 30%!" </h3>
     </div>
 
     <!-- Редактор кода (Trinket) -->
     <div class="section">
         <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket11" allowfullscreen></iframe>
+        <iframe class="trinket-embed" data-trinket-id="trinket41" allowfullscreen></iframe>
         <!-- Замените ссылку на ваш Trinket-виджет -->
     </div>
 
@@ -86,33 +93,14 @@
         <button class="collapsible">Ответ и решение ▼</button>
         <div class="content">
             <p>Пример решения:</p>
-            <pre><code>print("Привет!")</code></pre>
+            <pre><code>promo = input("Введите промокод: ")</code></pre>
+            <pre><code>while promo != "Весна":</code></pre>
+            <pre><code>      print("Промокод неверный, попробуйте снова")</code></pre>
+            <pre><code>      promo = input("Введите промокод: ")</code></pre>
+            <pre><code>print("У Вас скидка 30%!")</code></pre>
+
         </div>
     </div>
-
-    <!-- Задание -->
-    <div class="section">
-        <h2>Задание 2</h2>
-        <h3>Создай переменную name, которая принимает значение с клавиатуры (подсказка: используй команду input("Введите имя: ")) <br> Напиши программу, которая выводит "Привет, [имя пользователя]!" <br> <br> Пример: <br> Введите имя: Коля <br> Привет, Коля!</h3>
-    </div>
-
-    <!-- Редактор кода (Trinket) -->
-    <div class="section">
-        <h2>Trinket</h2>
-        <iframe class="trinket-embed" data-trinket-id="trinket12" allowfullscreen></iframe>
-        <!-- Замените ссылку на ваш Trinket-виджет -->
-    </div>
-
-    <!-- Ответ и решение -->
-    <div class="section">
-        <button class="collapsible">Ответ и решение ▼</button>
-        <div class="content">
-            <p>Пример решения:</p>
-            <pre><code>name = input("Введите имя: ")</code></pre>
-            <pre><code>print("Привет," + name + "!")</code></pre>
-        </div>
-    </div>
-
 
     <script src="lesson.js"></script>
 
